@@ -16,8 +16,8 @@
         <section>
             <div class="mb-3 w-50 mt-5 d-flex gap-4 text-center">
                 <div>
-                    <input type="email" class="form-control" id="search-field" placeholder="search mobile phone">
-                    <div id="emailHelp" class="form-text">You can find Mobile Phone, like your choice.</div>
+                    <input type="text" class="form-control" id="search-field" placeholder="search mobile phone">
+                    <div class="form-text">You can find Mobile Phone, like your choice.</div>
                 </div>
                 <div>
                     <button id="btn-search" class="btn btn-primary">Search</button>
@@ -30,6 +30,14 @@
             </div>
             <div  id="no-found" class="mt-4 d-none">
                 <h3 class="text-warning">No phone found, please try search again. </h3>
+            </div>
+        </section>
+        <!-- loading -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
         </section>
     </main>
